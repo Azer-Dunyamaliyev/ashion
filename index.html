@@ -1,84 +1,667 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <title>Document</title>
 </head>
+
 <body>
-    <main>
-        <section class="product">
-            <div class="container">
-                <div class="product_content">
-                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                        <div class="container-fluid">
-                          <a class="navbar-brand product_title" href="#">New product</a>
-                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                          </button>
-                        </div>
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                          <ul class="navbar-nav products_ul">
-                            <li class="nav-item border">
-                              <a class="nav-link active product_link" aria-current="page" href="#">All</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link product_link" href="#">Women's</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link product_link" href="#">Men's</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link product_link" href="#">Kid's</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link product_link" href="#">Accessories</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link product_link" href="#">Cosmetics</a>
-                            </li>
-                          </ul>
-                        </div>
-                      </nav>
-                    <div class="row">
-                      <div class="col-xl-3 col-md-6 col-sm-6 col-12  bg-warning">
-                        <div class="product_card">
-                            <img src="assets/image/product-1.jpg" alt="">
-                            <div class="product_txt">
-                                <a href="#">Buttons tweed blazer</a>
-                            </div>
-                        </div>
-                      </div>
-                      <div class="col-xl-3 col-md-6 col-sm-6 col-12 bg-warning">
-                        <div class="product_card">
-                            <img src="assets/image/product-2.jpg" alt="">
-                            <div class="product_txt">
-                                <a href="#">Buttons tweed blazer</a>
-                            </div>
-                        </div>
-                      </div>
-                      <div class="col-xl-3 col-md-6 col-sm-6 col-12 bg-warning">
-                        <div class="product_card">
-                            <img src="assets/image/product-3.jpg" alt="">
-                            One of three columns
-                        </div>
-                      </div>
-                      <div class="col-xl-3 col-md-6 col-sm-6 col-12 bg-warning">
-                        <div class="product_card">
-                            <img src="assets/image/product-4.jpg" alt="">
-                            One of three columns
-                        </div>
-                      </div>
-                    </div>
+
+  <header>
+    <div class="container">
+      <div class="header_content">
+        <div class="logo">
+          <img src="assets/image/logo.png" alt="#">
+        </div>
+        <nav>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Women's</a></li>
+            <li><a href="">Men's</a></li>
+            <li><a href="">Shop</a></li>
+            <li class="drop_down">
+              <a href="">Pages</a>
+              <nav class="drop">
+                <ul>
+                  <li><a href="">Products Details</a></li>
+                  <li><a href="">Shop Cart</a></li>
+                  <li><a href="">Checkout</a></li>
+                  <li><a href="">Blog Details</a></li>
+                </ul>
+              </nav>
+            </li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header_links">
+          <a href="#">Login/Register</a>
+          <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+          <a href="#"><i class="fa-regular fa-heart"></i></a>
+          <a href="#"><i class="fa-brands fa-shopify"></i></a>
+        </div>
+        <div class="bars">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="home">
+      <div class="home_col">
+          <h2>Women’s fashion</h2>
+          <p>Sitamet, consectetur adipiscing elit, sed do eiusmod tempor incidid-unt labore edolore magna aliquapendisse ultrices gravida.</p>
+          <a href="#" class="btn">SHOP NOW</a>
+      </div>
+      <div class="home_col">
+        <div class="home_card">
+          <h3>Men’s fashion</h3>
+          <p>358 items</p>
+          <a href="#" class="btn">SHOP NOW</a>
+        </div>
+        <div class="home_card">
+          <h3>Kid’s fashion</h3>
+          <p>273 items</p>
+          <a href="#" class="btn">SHOP NOW</a>
+        </div>
+        <div class="home_card">
+          <h3>Cosmetics</h3>
+          <p>159 items</p>
+          <a href="#" class="btn">SHOP NOW</a>
+        </div>
+        <div class="home_card">
+          <h3>Accessories</h3>
+          <p>792 items</p>
+          <a href="#" class="btn">SHOP NOW</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="product">
+      <div class="container">
+        <div class="product_content">
+          <div class="product_title">
+            <h2>New product</h2>
+            <nav>
+              <ul>
+                <li><a href="">All</a></li>
+                <li><a href="">Women's</a></li>
+                <li><a href="">Men's</a></li>
+                <li><a href="">Kid's</a></li>
+                <li><a href="">Accessories</a></li>
+                <li><a href="">Cosmetics</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="row">
+            <div class="col-xl-3 col-md-6 col-sm-6 col-12">
+              <div class="product_card new">
+                <img src="assets/image/product-1.jpg" alt="">
+                <div class="product_txt">
+                  <a href="#">Buttons tweed blazer</a>
+                  <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <h4>$59.0</h4>
                 </div>
               </div>
-        </section>
-    </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+            </div>
+            <div class="col-xl-3 col-md-6 col-sm-6 col-12">
+              <div class="product_card">
+                <img src="assets/image/product-2.jpg" alt="">
+                <div class="product_txt">
+                  <a href="#">Flowy striped skirt</a>
+                  <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <h4>$49.0</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-6 col-sm-6 col-12">
+              <div class="product_card stock">
+                <img src="assets/image/product-3.jpg" alt="">
+                <div class="product_txt">
+                  <a href="#">Cotton T-Shirt</a>
+                  <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <h4>$59.0</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-6 col-sm-6 col-12">
+              <div class="product_card">
+                <img src="assets/image/product-4.jpg" alt="">
+                <div class="product_txt">
+                  <a href="#">Slim striped pocket shirt</a>
+                  <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <h4>$59.0</h4>
+                </div>  
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-6 col-sm-6 col-12">
+              <div class="product_card">
+                <img src="assets/image/product-5.jpg" alt="">
+                <div class="product_txt">
+                  <a href="#">Slim striped pocket shirt</a>
+                  <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <h4>$59.0</h4>
+                </div>  
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-6 col-sm-6 col-12">
+              <div class="product_card sale">
+                <img src="assets/image/product-6.jpg" alt="">
+                <div class="product_txt">
+                  <a href="#">Slim striped pocket shirt</a>
+                  <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <h4>$49.0 <span>$59.0</span></h4>
+                </div>  
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-6 col-sm-6 col-12">
+              <div class="product_card">
+                <img src="assets/image/product-7.jpg" alt="">
+                <div class="product_txt">
+                  <a href="#">Slim striped pocket shirt</a>
+                  <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <h4>$59.0</h4>
+                </div>  
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-6 col-sm-6 col-12">
+              <div class="product_card sale">
+                <img src="assets/image/product-8.jpg" alt="">
+                <div class="product_txt">
+                  <a href="#">Slim striped pocket shirt</a>
+                  <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <h4>$49.0 <span>$59.0</span></h4>
+                </div>  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="collection">
+      <div class="container">
+        <div class="collection_content">
+          <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators btn_box">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active slide_btn" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" class="slide_btn"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" class="slide_btn"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="slide_txt">
+                  <span>The Chloe Collection</span>
+                  <h1>The Project Jacket</h1>
+                  <div class="slide_btn">
+                    <a href="" class="btn">SHOP NOW</a>
+                  </div>
+                </div>
+                
+              </div>
+              <div class="carousel-item">
+                <div class="slide_txt">
+                  <span>The Chloe Collection</span>
+                  <h1>The Project Jacket</h1>
+                  <div class="slide_btn">
+                    <a href="" class="btn">SHOP NOW</a>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="slide_txt">
+                  <span>The Chloe Collection</span>
+                  <h1>The Project Jacket</h1>
+                  <div class="slide_btn">
+                    <a href="" class="btn">SHOP NOW</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="trend">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <div class="trend_list">
+              <h2>Hot Trend</h2>
+              <div class="trend_row">
+                <div class="row_lg">
+                  <img src="assets/image/ht-1.jpg" alt="">
+                </div>
+                <div class="row_txt">
+                  <h6>Chain bucket bag</h6>
+                  <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <span class="price">$59.0</span>
+                </div>
+              </div>
+              <div class="trend_row">
+                <div class="row_lg">
+                  <img src="assets/image/ht-2.jpg" alt="">
+                </div>
+                <div class="row_txt">
+                  <h6>Pendant earrings</h6>
+                  <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <span class="price">$59.0</span>
+                </div>
+              </div>
+              <div class="trend_row">
+                <div class="row_lg">
+                  <img src="assets/image/ht-3.jpg" alt="">
+                </div>
+                <div class="row_txt">
+                  <h6>Cotton T-Shirt</h6>
+                  <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <span class="price">$59.0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <div class="trend_list">
+              <h2>Best seller</h2>
+              <div class="trend_row">
+                <div class="row_lg">
+                  <img src="assets/image/bs-1.jpg" alt="">
+                </div>
+                <div class="row_txt">
+                  <h6>Cotton T-Shirt</h6>
+                  <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <span class="price">$59.0</span>
+                </div>
+              </div>
+              <div class="trend_row">
+                <div class="row_lg">
+                  <img src="assets/image/bs-2.jpg" alt="">
+                </div>
+                <div class="row_txt">
+                  <h6>Zip-pockets pebbled tote
+                    briefcase</h6>
+                  <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <span class="price">$59.0</span>
+                </div>
+              </div>
+              <div class="trend_row">
+                <div class="row_lg">
+                  <img src="assets/image/bs-3.jpg" alt="">
+                </div>
+                <div class="row_txt">
+                  <h6>Round leather bag</h6>
+                  <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <span class="price">$59.0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <div class="trend_list">
+              <h2>Feature</h2>
+              <div class="trend_row">
+                <div class="row_lg">
+                  <img src="assets/image/f-1.jpg" alt="">
+                </div>
+                <div class="row_txt">
+                  <h6>Bow wrap skirt</h6>
+                  <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <span class="price">$59.0</span>
+                </div>
+              </div>
+              <div class="trend_row">
+                <div class="row_lg">
+                  <img src="assets/image/f-2.jpg" alt="">
+                </div>
+                <div class="row_txt">
+                  <h6>Metallic earrings</h6>
+                  <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <span class="price">$59.0</span>
+                </div>
+              </div>
+              <div class="trend_row">
+                <div class="row_lg">
+                  <img src="assets/image/f-3.jpg" alt="">
+                </div>
+                <div class="row_txt">
+                  <h6>Flap cross-body bag</h6>
+                  <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <span class="price">$59.0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="summer">
+      <div class="container">
+        <div class="summer_content">
+          <div class="summer_col">
+            <img src="assets/image/discount.jpg" alt="">
+          </div>
+          <div class="summer_col">
+            <div class="circle">
+              <span>Discount</span>
+              <h2>Summer 2019</h2>
+              <h5>
+                <span>Sale</span>
+                50%
+              </h5>
+            </div>
+            <div class="btn">
+              <a href="" class="btn">SHOP NOW</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="info">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="info_card">
+              <i class="fa fa-car"></i>
+              <div class="info_txts">
+                <h6>Free Shipping</h6>
+                <p>
+                  For all oder over $99
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+            <div class="info_card">
+              <i class="fa fa-money-bill"></i>
+              <div class="info_txts">
+                <h6>Money Back Guarantee</h6>
+                <p>
+                  If good have Problems
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+            <div class="info_card">
+              <i class="fa-solid fa-mug-hot"></i>
+              <div class="info_txts">
+                <h6>Online Support 24/7</h6>
+                <p>
+                  Dedicated support
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+            <div class="info_card">
+              <i class="fa-solid fa-music"></i>
+              <div class="info_txts">
+                <h6>Payment Secure</h6>
+                <p>
+                  100% secure payment
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="clothes">
+      <div class="row">
+        <div class="col pd">
+          <div class="clothes_col">
+            <img src="assets/image/insta-1.jpg" alt="">
+            <div class="insta_txt">
+              <i class="fa-brands fa-instagram"></i>
+              <a href="">@ ashion_shop</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-3 col-sm-4 col-12 pd">
+          <div class="clothes_col">
+            <img src="assets/image/insta-2.jpg" alt="">
+            <div class="insta_txt">
+              <i class="fa-brands fa-instagram"></i>
+              <a href="">@ ashion_shop</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-3 col-sm-4 col-12 pd">
+          <div class="clothes_col">
+            <img src="assets/image/insta-3.jpg" alt="">
+            <div class="insta_txt">
+              <i class="fa-brands fa-instagram"></i>
+              <a href="">@ ashion_shop</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-3 col-sm-4 col-12 pd">
+          <div class="clothes_col">
+            <img src="assets/image/insta-4.jpg" alt="">
+            <div class="insta_txt">
+              <i class="fa-brands fa-instagram"></i>
+              <a href="">@ ashion_shop</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-3 col-sm-4 col-12 pd">
+          <div class="clothes_col">
+            <img src="assets/image/insta-5.jpg" alt="">
+            <div class="insta_txt">
+              <i class="fa-brands fa-instagram"></i>
+              <a href="">@ ashion_shop</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-3 col-sm-4 col-12 pd">
+          <div class="clothes_col">
+            <img src="assets/image/insta-6.jpg" alt="">
+            <div class="insta_txt">
+              <i class="fa-brands fa-instagram"></i>
+              <a href="">@ ashion_shop</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-4 col-md-6 col-sm-12 col-12">
+          <div class="footer_col">
+            <div class="foot_logo">
+              <img src="assets/image/logo.png" alt="">
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+              sed do eiusmod tempor incididunt cilisis.
+            </p>
+            <div class="pays">
+              <ul>
+                <li><a href=""><img src="assets/image/payment-1.png" alt=""></a></li>
+                <li><a href=""><img src="assets/image/payment-2.png" alt=""></a></li>
+                <li><a href=""><img src="assets/image/payment-3.png" alt=""></a></li>
+                <li><a href=""><img src="assets/image/payment-4.png" alt=""></a></li>
+                <li><a href=""><img src="assets/image/payment-5.png" alt=""></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-3 col-sm-6 col-6">
+          <div class="footer_col">
+            <h6>Quick links</h6>
+
+            <ul>
+              <li><a href="">About</a></li>
+              <li><a href="">Blogs</a></li>
+              <li><a href="">Contact</a></li>
+              <li><a href="">FAQ</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-3 col-sm-6 col-6">
+          <div class="footer_col">
+            <h6>Account</h6>
+
+            <ul>
+              <li><a href="">My Account</a></li>
+              <li><a href="">Orders Tracking</a></li>
+              <li><a href="">Checkout</a></li>
+              <li><a href="">Wishlist</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-4 col-md-8 col-sm-8 col-12">
+          <div class="footer_col">
+            <h6>NEWSLETTER</h6>
+            <form class="col_input">
+              <input type="email" placeholder="Email">
+              <div class="input_btn">SUBSCRIBE</div>
+            </form>
+            <div class="social_links">
+              <ul>
+                <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-pinterest"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
